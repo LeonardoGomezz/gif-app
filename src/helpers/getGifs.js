@@ -9,7 +9,5 @@ export const getGitf = async (category) => {
     url: img.images.downsized_medium.url
   }))
 
-  console.log('imagenes => ',gifs)
-
   return gifs
 }
