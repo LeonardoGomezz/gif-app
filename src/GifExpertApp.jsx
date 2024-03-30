@@ -1,11 +1,8 @@
 import { useState } from "react"
-import { AddCategorie } from "./components/AddCategorie"
-import { GifGrid } from "./components/GifGrid"
+import { AddCategorie, GifGrid } from "./components"
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['one punch man'])
-
-  console.log(categories)
 
   const onAddCategorie = (newCategorie) => {
     if(categories.includes(newCategorie)){
@@ -22,8 +19,6 @@ export const GifExpertApp = () => {
    onNewCategorie = { (event) =>onAddCategorie(event) } 
    currenCategories = {categories}
     />
-
-
     {
     categories.map((category) =>{
       return(
